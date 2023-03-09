@@ -28,7 +28,8 @@
     "dist": "dist"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "ape-to-json": "ts-node test/ape-to-json/ape-to-json.ts",
+    "cj-to-json": "ts-node test/cj-to-json/cj-to-json.ts",
     "build": "tsc",
     "lint": "tslint -p ./tsconfig.json",
     "prepare": "npm run build",
