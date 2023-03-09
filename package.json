@@ -1,0 +1,45 @@
+{
+  "name": "french-company-types",
+  "version": "1.0.0",
+  "description": "Implement all types and definitions of French Company.",
+  "keywords": [
+    "french",
+    "company",
+    "types",
+    "typescript"
+  ],
+  "author": "git.init.wesley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git-init-wesley/french-company-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/git-init-wesley/french-company-types/issues"
+  },
+  "homepage": "https://github.com/git-init-wesley/french-company-types#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "directories": {
+    "src": "src",
+    "dist": "dist"
+  },
+  "scripts": {
+    "ape-to-json": "ts-node test/ape-to-json/ape-to-json.ts",
+    "cj-to-json": "ts-node test/cj-to-json/cj-to-json.ts",
+    "build": "tsc",
+    "lint": "tslint -p ./tsconfig.json",
+    "prepare": "npm run build",
+    "verification": "npm run lint",
+    "doc": "npx typedoc ./src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typedoc": "^0.23.25",
+    "typescript": "^4.9.5"
+  }
+}

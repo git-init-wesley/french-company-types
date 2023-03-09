@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/__tests__/*"
+  ]
+}
