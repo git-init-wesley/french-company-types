@@ -6,7 +6,7 @@
  * @version 09-2023
  * @type {Array<SalryStaffRange>}
  */
-export const SalaryStaffCodeRanges = [
+export const SalaryStaffRangeCodes = [
     'NN',
     '00',
     '01',
@@ -33,7 +33,7 @@ export const SalaryStaffCodeRanges = [
  * @version 09-2023
  * @typedef {('NN' | '01' | '02' | '03' | '11' | '12' | '21' | '22' | '31' | '32' | '41' | '42' | '51' | '52' | '53')} SalryStaffRange
  */
-export type SalaryStaffCodeRange = typeof SalaryStaffCodeRanges[number]
+export type SalaryStaffRangeCode = typeof SalaryStaffRangeCodes[number]
 
 /**
  * An object that maps salary staff range codes to corresponding range descriptions.
@@ -41,9 +41,9 @@ export type SalaryStaffCodeRange = typeof SalaryStaffCodeRanges[number]
  * **Source SIRENE** [link](https://www.sirene.fr/sirene/public/variable/trancheEffectifsEtablissement)
  *
  * @version 09-2023
- * @type {Record<SalaryStaffCodeRange, string>}
+ * @type {Record<SalaryStaffRangeCode, string>}
  */
-export const SalaryStaffRange: Record<SalaryStaffCodeRange, string> = {
+export const SalaryStaffRanges: Record<SalaryStaffRangeCode, string> = {
     'NN': 'Etablissement non employeur',
     '00': '0 salarié',
     '01': '1 ou 2 salariés',
