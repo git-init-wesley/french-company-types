@@ -1,16 +1,18 @@
 import {CompanyCategoryCode} from "./company-category"
 import {CompanyComplements} from "./complements/company-complements"
 import {CompanyLeader} from "./company-leader"
-import {CompanyEstablishment} from "./company-etablishment"
+import {CompanyEstablishment} from "./establishment/company-establishment"
 import {CompanySeat} from "./company-seat"
 import {SalaryStaffRangeCode} from "./company-salary";
+import {CompanyStateCode} from "./company-state";
 
 export * from './complements/company-complements'
 export * from './company-functions'
-export * from './company-etablishment'
+export * from './establishment/company-establishment'
 export * from './company-category'
 export * from './company-salary'
 export * from './company-leader'
+export * from './company-state'
 export * from './company-seat'
 export * from './ape/ape'
 export * from './cj/cj'
@@ -73,6 +75,7 @@ export interface Company {
      * The employee headcount range of the company.
      *
      * @type {SalaryStaffRangeCode | undefined | null}
+     * @typedef {('NN' | '01' | '02' | '03' | '11' | '12' | '21' | '22' | '31' | '32' | '41' | '42' | '51' | '52' | '53') | SalaryStaffRangeCodes | undefined | null}
      * @memberOf Company
      */
     tranche_effectif_salarie?: SalaryStaffRangeCode | null
@@ -89,6 +92,7 @@ export interface Company {
      * The category of the company.
      *
      * @type {CompanyCategoryCode | undefined | null}
+     * @typedef {('PME' | 'ETI' | 'GE') | CompanyCategoryCode | undefined | null}
      * @memberOf Company
      */
     categorie_entreprise?: CompanyCategoryCode | string | null
@@ -96,10 +100,11 @@ export interface Company {
     /**
      * The administrative status of the company.
      *
-     * @type {string | undefined | null}
+     * @type {CompanyStateCode | undefined | null}
+     * @typedef {('A' | 'C') CompanyStateCode | undefined | null}
      * @memberOf Company
      */
-    etat_administratif?: string | null
+    etat_administratif?: CompanyStateCode | null
 
     /**
      * The name or business name of the company.

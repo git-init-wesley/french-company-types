@@ -4,7 +4,7 @@
  * **Source SIRENE** [link](https://www.sirene.fr/sirene/public/variable/trancheEffectifsEtablissement)
  *
  * @version 09-2023
- * @type {Array<SalryStaffRange>}
+ * @type {Array<SalaryStaffRangeCodes>}
  */
 export const SalaryStaffRangeCodes = [
     'NN',
@@ -31,7 +31,7 @@ export const SalaryStaffRangeCodes = [
  * **Source SIRENE** [link](https://www.sirene.fr/sirene/public/variable/trancheEffectifsEtablissement)
  *
  * @version 09-2023
- * @typedef {('NN' | '01' | '02' | '03' | '11' | '12' | '21' | '22' | '31' | '32' | '41' | '42' | '51' | '52' | '53')} SalryStaffRange
+ * @typedef {('NN' | '01' | '02' | '03' | '11' | '12' | '21' | '22' | '31' | '32' | '41' | '42' | '51' | '52' | '53')} SalaryStaffRangeCodes
  */
 export type SalaryStaffRangeCode = typeof SalaryStaffRangeCodes[number]
 

@@ -1,3 +1,7 @@
+import {CompanyEstablishmentStateCode} from "./company-establishment-state";
+
+export * from './company-establishment-state'
+
 /**
  * Represents an establishment.
  *
@@ -36,9 +40,10 @@ export interface CompanyEstablishment {
      * The administrative state of the establishment.
      *
      * @type {string | undefined | null}
+     * @typedef {('A' | 'C') | CompanyEstablishmentStateCode | undefined | null}
      * @memberOf CompanyEstablishment
      */
-    etat_administratif?: string | null
+    etat_administratif?: CompanyEstablishmentStateCode | null
     /**
      * The geo ID of the establishment.
      *
