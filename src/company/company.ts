@@ -1,9 +1,9 @@
-import {CompanyCategory} from "./company-category"
+import {CompanyCategoryCode} from "./company-category"
 import {CompanyComplements} from "./complements/company-complements"
 import {CompanyLeader} from "./company-leader"
 import {CompanyEstablishment} from "./company-etablishment"
 import {CompanySeat} from "./company-seat"
-import {SalaryStaffCodeRange} from "./company-salary";
+import {SalaryStaffRangeCode} from "./company-salary";
 
 export * from './complements/company-complements'
 export * from './company-functions'
@@ -72,10 +72,10 @@ export interface Company {
     /**
      * The employee headcount range of the company.
      *
-     * @type {SalaryStaffCodeRange | undefined | null}
+     * @type {SalaryStaffRangeCode | undefined | null}
      * @memberOf Company
      */
-    tranche_effectif_salarie?: SalaryStaffCodeRange | null
+    tranche_effectif_salarie?: SalaryStaffRangeCode | null
 
     /**
      * The date of last update of the company data.
@@ -88,10 +88,10 @@ export interface Company {
     /**
      * The category of the company.
      *
-     * @type {CompanyCategory | undefined | null}
+     * @type {CompanyCategoryCode | undefined | null}
      * @memberOf Company
      */
-    categorie_entreprise?: CompanyCategory | string | null
+    categorie_entreprise?: CompanyCategoryCode | string | null
 
     /**
      * The administrative status of the company.
