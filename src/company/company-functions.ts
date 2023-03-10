@@ -1,4 +1,4 @@
-import {Company, CompanyLeader} from "./company"
+import {Company, CompanyEstablishment, CompanyLeader} from "./company"
 
 /**
  * Check if a company is an association.
@@ -32,3 +32,11 @@ export const isPhysicalPerson = (leader: CompanyLeader) => leader.type_dirigeant
  * @returns True if the company is active, false otherwise.
  */
 export const isActiveCompany = (company: Company) => company.etat_administratif?.toUpperCase() === "A"
+
+/**
+ * Check if an establishment of company is active.
+ *
+ * @param companyEstablishment - The establishment object of company to check.
+ * @returns True if the establishment of company is active, false otherwise.
+ */
+export const isActiveEstablishment = (companyEstablishment: CompanyEstablishment) => companyEstablishment.etat_administratif?.toUpperCase() === "A"
