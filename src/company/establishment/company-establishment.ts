@@ -28,7 +28,7 @@ export interface CompanyEstablishment {
      * @type {string | undefined | null}
      * @memberOf CompanyEstablishment
      */
-    code_postal?: string | null
+    commune?: string | null
     /**
      * Indicates whether the establishment is the main office or not.
      *

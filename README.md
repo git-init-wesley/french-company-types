@@ -26,8 +26,8 @@ Files were exported to
 
 ### Additional Details
 
-* Version: 1.0.3
-* Last updated: 15 March 2023 13:00 (UTC)
+* Version: 1.0.4
+* Last updated: 15 March 2023 15:00 (UTC)
 * Dependencies: none
 * Global values: none
 
