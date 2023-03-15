@@ -209,7 +209,7 @@ export interface Company {
      * @type {CompanyEstablishment[] | undefined | null}
      * @memberOf Company
      */
-    matching_etablisssements?: CompanyEstablishment[] | null
+    matching_etablissements?: CompanyEstablishment[] | null
 
     /**
      * The leaders of the company.
