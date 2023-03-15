@@ -40,7 +40,7 @@ export interface CompanyEstablishment {
      * The administrative state of the establishment.
      *
      * @type {string | undefined | null}
-     * @typedef {('A' | 'C') | CompanyEstablishmentStateCode | undefined | null}
+     * @typedef {('A' | 'F') | CompanyEstablishmentStateCode | undefined | null}
      * @memberOf CompanyEstablishment
      */
     etat_administratif?: CompanyEstablishmentStateCode | null

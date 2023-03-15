@@ -8,7 +8,7 @@
  */
 export const CompanyEstablishmentStateCodes = [
     'A',
-    'C',
+    'F',
 ] as const
 
 /**
@@ -17,7 +17,7 @@ export const CompanyEstablishmentStateCodes = [
  * **Source SIRENE** [link](https://www.sirene.fr/sirene/public/variable/etatAdministratifEtablissement)
  *
  * @version 09-2023
- * @typedef {('A' | 'C')} CompanyEstablishmentStateCodes
+ * @typedef {('A' | 'F')} CompanyEstablishmentStateCodes
  */
 export type CompanyEstablishmentStateCode = typeof CompanyEstablishmentStateCodes[number]
 
@@ -31,5 +31,5 @@ export type CompanyEstablishmentStateCode = typeof CompanyEstablishmentStateCode
  */
 export const CompanyEstablishmentStates: Record<CompanyEstablishmentStateCode, string> = {
     'A': 'Actif',
-    'C': 'Fermé',
+    'F': 'Fermé',
 } as const
